@@ -1,0 +1,82 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    logrotate (1.0.2)
+
+GIT
+  remote: https://github.com/fnichol/chef-rvm.git
+  ref: master
+  sha: 6cd79589c85365227c930a559cfedc4c5b8bf9f6
+  specs:
+    rvm (0.9.1)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/apache2.git
+  ref: master
+  sha: 964df63fcc838da031600d5006dbd6d0ecbd31ed
+  specs:
+    apache2 (1.3.0)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/apt.git
+  ref: master
+  sha: e1ba5f8dce526e458e4c309a70499a47481cf60d
+  specs:
+    apt (1.5.0)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/java.git
+  ref: master
+  sha: 7559322bf12b5c0db102ac7265d7ceee41ededec
+  specs:
+    java (1.6.0)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/yum.git
+  ref: master
+  sha: 072926aa1f88a76a3789f241b3452b458dddb15f
+  specs:
+    yum (1.0.1)
+
+GIT
+  remote: https://github.com/sebwendel/chef-elasticsearch.git
+  ref: master
+  sha: bbef2b5810a3fba906d4e601f950611d47592853
+  specs:
+    elasticsearch (0.1.0)
+      java (>= 0.0.0)
+
+GIT
+  remote: https://github.com/sebwendel/chef-graylog2.git
+  ref: master
+  sha: 9bcc434a221b76e1a9dcd359c5615e38283bbab9
+  specs:
+    graylog2 (0.0.22)
+      apache2 (>= 0.0.0)
+      apt (>= 0.0.0)
+      elasticsearch (>= 0.0.0)
+      java (>= 0.0.0)
+      logrotate (>= 0.0.0)
+      mongodb (>= 0.0.0)
+      rvm (>= 0.0.0)
+      yum (>= 0.0.0)
+
+GIT
+  remote: https://github.com/sebwendel/chef-mongodb.git
+  ref: master
+  sha: 0464bf6f3be2a2f940241953a33c1aa30b88bb4b
+  specs:
+    mongodb (0.0.0)
+      apt (>= 0.0.0)
+      yum (>= 0.0.0)
+
+DEPENDENCIES
+  apache2 (>= 0)
+  apt (>= 0)
+  elasticsearch (>= 0)
+  graylog2 (>= 0)
+  java (>= 0)
+  mongodb (>= 0)
+  rvm (>= 0)
+  yum (>= 0)
+
